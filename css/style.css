@@ -1,0 +1,296 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+ This sets all margin and padding to 0
+ 
+ If it's a regular tag/element, you can just type it like 'body' below.
+ If it's a class, you must put a peroid beforehand, like: '.body'
+You can define classes yourself.
+
+It is long debated whether hypenated variables are better than cameled. I think I prefer hyphen but cameled does look more professional.
+hypen-class
+camelClass
+
+IDs use # to specify their targets
+
+The difference: 
+    IDs are used for single elements that appear only once per page.
+    Classes are used for recurring elements (paragraphs, links, buttons etc.)
+ */
+
+header {
+    display: block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.628);
+    color: white;
+    font-size: 32px;
+}
+
+body{
+    /*
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    This can all be summerised with a simple 'font'*/
+    font:normal 16px Arial, Helvetica, sans-serif;
+
+    line-height:1.4em;
+    margin:0;
+    background:url('../img/spyro3.png');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.head {
+    text-align: center;
+    margin-top: 20px;
+}
+/*
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:none;
+}*/
+
+.container{
+    width:800px;
+    margin:auto;
+    /* Will want to use percentages when dealing with containers, rather than pixels for true scalability
+    Margin is where the page is 'justified' */
+    overflow: hidden;
+}
+
+.clr{
+    clear: both;
+}
+
+.button{
+    background-color: black;
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background: red;
+    color: #fff;
+}
+
+.box-1{
+    background-color:  rgba(0, 0, 0, 0.628);
+    color:#fff;
+
+    /*border-right: 5px red solid;
+    border: 5px red solid;
+*/
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border: 2px #ccc solid;
+    border-radius: 15px;
+}
+
+.box-1 h1{
+    font-family:Tahoma;
+    font-weight:800;
+    padding:3px;
+    text-align: center;
+}
+
+.box-1 h2{
+    text-align: center;
+}
+/*
+.box-2{
+    border: 2px #ccc solid;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #333;
+    color:#fff;
+}
+
+.box-2 h1{
+    text-align: center;
+    font-style: italic;
+    padding:3px;
+}*/
+/*
+.categories{
+    border: 2px #ccc solid;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #333;
+    color:#fff;
+}*/
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding:0 32px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 2px #333;
+    list-style-image: url('../img/check.jpg');
+
+}
+
+hr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background:url('../img/linebreak.png');
+    border:0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    color:white;
+}
+
+.example{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px #ccc solid;
+    border-radius: 15px;
+  }
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type=text], .my-form textarea{
+    padding:8px;
+    width:100%;
+}
+
+/*.my-form input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+}*/
+
+.block{
+    float: left;
+    width: 32%;
+    height: 300px;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.block h3{
+    text-align: center;
+    font-style: italic;
+}
+
+blockquote{
+    text-align: center;
+    font-size: 12px;
+}
+
+/*#main-block{
+    float:left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}*/
+
+#sidebar{
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url(../img/spyro2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.haunt{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width:100px;
+    height:auto;
+}
+
+/*.mylist li:first-child{
+    background: red;
+}
+.mylist li:last-child{
+    background: grey;
+}
+.mylist li:nth-child(even){
+    background: yellow;
+} Psuedo-classes can be used to target specific aspects of an element within a class. In this example, we can specify a paticular postion on the list. Either first or last (which dynamically scale with the list, regardless of content), we can also use 'nth' to specify a specific list item by number (so if we put in 3, it will always be the 3rd one down from the top).
+We can also use odd and even.
+Useful for data that isn't kept on the site and is instead dynamically fetched from external sources */ 
+
+#box-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
+}
