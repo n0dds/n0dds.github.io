@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+    overflow-y: scroll;
+}
+
 h1{
     text-align: center;
     font: bold 48px arial,helvetica,sans-serif;
@@ -92,7 +96,7 @@ hr{
 
 .container{
     width:800px;
-    margin: auto;
+    margin:0 auto;
     overflow: hidden;
     position: relative;
 }
@@ -101,7 +105,7 @@ hr{
     background-color:  rgba(0, 0, 0, 0.708);
     color:#fff;
     padding: 16px;
-    margin: 20px 0;
+    margin: 18px auto;
     border-radius: 24px;
     padding-left: 24px;
     padding-right: 24px;
@@ -181,6 +185,13 @@ hr{
     width: 400px;
 }
 
+.return-top{
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+    width: 64px;
+}
+
 .block-image{
 display: block;
     margin-left: auto;
@@ -200,4 +211,11 @@ display: block;
     border-radius: 24px;
     width: 18%;
     margin: 20px auto;
+}
+
+.rightcolumn {
+    position: fixed;
+    left: 286px;
+    top: 355px;
+    width: 248px;
 }
