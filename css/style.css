@@ -20,6 +20,18 @@ h2{
     padding: 6px;
 }
 
+h3{
+    font: bold 24px arial,helvetica,sans-serif;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+h5{
+    font: italic 18px arial,helvetica,sans-serif;
+    color:#00FF6E;
+}
+
 p{
     padding: 10px;
 }
@@ -218,4 +230,17 @@ display: block;
     left: 286px;
     top: 355px;
     width: 248px;
+}
+
+.blog-image{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid transparent;
+        border-radius: 26px;
 }
