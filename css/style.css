@@ -233,7 +233,7 @@ display: block;
 .rightcolumn {
     position: fixed;
     left: 286px;
-    top: 355px;
+    top: 0px;
     width: 248px;
 }
 
