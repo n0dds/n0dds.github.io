@@ -190,6 +190,10 @@ hr{
         height:60%;
       }
 
+    a{
+        text-decoration:none
+    }
+
 .fix-me{
     position: fixed;
     bottom: 20px;
