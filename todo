@@ -1,17 +1,17 @@
 Art
     Make new banner image
-    Make new background
-    Make custom icons
-    Make site icon
 
 Text
-    Write intro
     Write/Publish Articles
         Write an article on my history with websites
         Write an article on Twygg and how it's going so far
-    Write personal introduction and about section
-    Remove placeholder text from pages
 
-Code
-    Add carosel to the homepage showing artwork
-    Add image gallery to portfolio page
+Heres the article templates
+    List:
+            <a href="articles/template">  <!-- Template Article -->
+                <div class="box-1">
+                    <h3>Template Article</h3>
+                    <h5>30th August 2023</h5>
+                    <p>A template of a default article</p>
+                </div>
+            </a>

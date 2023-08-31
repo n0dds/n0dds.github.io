@@ -75,7 +75,7 @@ blockquote:after {
     content: "\201D";
 }
 
-cite {
+cite{
     display: block;
     font-style: italic;
     font-size: 16px;
@@ -87,7 +87,6 @@ hr{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 12px;
     height: 28px;
     background:url('../img/hr.png');
     border:0;
@@ -116,6 +115,16 @@ hr{
 
 .box-1{
     background-color:  rgba(0, 0, 0, 0.708);
+    color:#fff;
+    padding: 16px;
+    margin: 18px auto;
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.box-2{
+    background-color:  rgba(0, 0, 0, 0.318);
     color:#fff;
     padding: 16px;
     margin: 18px auto;
@@ -204,8 +213,13 @@ hr{
 .return-top{
     position: fixed;
     bottom: 48px;
-    right: 48px;
+    right: 40px;
     width: 64px;
+    opacity: 50%;
+}
+
+.return-top:hover{
+    opacity: 100%;
 }
 
 .block-image{
@@ -237,14 +251,46 @@ display: block;
 }
 
 .blog-image{
-        display: block;
-        width: 90%;
-        height: auto;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 2px solid transparent;
-        border-radius: 26px;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    border-radius: 26px;
 }
+  
+div.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    aspect-ratio: 1;
+    object-fit:cover;
+  }
+  
+.responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 31.4%;
+  }
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
