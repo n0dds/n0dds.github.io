@@ -87,7 +87,7 @@ hr{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 12px;
     height: 28px;
     background:url('../img/hr.png');
     border:0;
@@ -141,8 +141,7 @@ hr{
     color:#00FF6E;
 }
 .emphasis1{
-    color:#ff1b7a;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.708);
+    color:#ff227e;
 }
 
 .quote-bubble{
