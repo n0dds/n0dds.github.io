@@ -293,4 +293,8 @@ div.gallery img {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+  img {
+    pointer-events: none;
+}
