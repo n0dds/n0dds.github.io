@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/hi.png">
+    <a id="top"></a>
+</head>
+<body>
+    <div class="container">
+        <header class="head"></header> <!--Logo and Header-->
+
+            <ul class="nav">
+                <li><a href="./"><h2>Home</h2></a></li>
+                <li><a href="./portfolio"><h2>Portfolio</h2></a></li>
+                <li><a href="./articles"><h2>Articles</h2></a></li>
+                <li><a href="./contact"><h2>Contact</h2></a></li>
+            </ul>
+
+            <div class="folio"> <!-- Main Page Content -->
+            <div class="row">
+                <div class="column">
+                    <div> <!-- Modal -->
+                        <img class="myImages" id="myImg" src="./img/gallery/character/illman.png" alt="'Illustrated Man' Character Sheet" style="width:100%">
+                        <img class="myImages" id="myImg" src="./img/gallery/environ/cellout.png" alt="'Cell Out' Level Concept" style="width:100%">
+                        <img class="myImages" id="myImg" src="./img/gallery/character/sam.png" alt="Dear god, there's more of them" style="width:100%">
+                    </div>     
+                </div>
+                <div class="column">
+                    <div> <!-- Modal -->
+                        <img class="myImages" id="myImg" src="./img/gallery/character/sam.png" alt="Dear god, there's more of them" style="width:100%">
+                        <img class="myImages" id="myImg" src="./img/gallery/environ/cellout.png" alt="Dear god, there's more of them" style="width:100%">
+                        <img class="myImages" id="myImg" src="./img/gallery/environ/beyond.png" alt="Enjoy this disgusting little freak" style="width:100%">
+                    </div>     
+                </div>
+                <div class="column">
+                    <div> <!-- Modal -->
+                        <img class="myImages" id="myImg" src="./img/gallery/environ/beyond.png" alt="Enjoy this disgusting little freak" style="width:100%">
+                        <img class="myImages" id="myImg" src="./img/gallery/environ/cellout.png" alt="Dear god, there's more of them" style="width:100%">
+                        <img class="myImages" id="myImg" src="./img/gallery/character/sam.png" alt="Dear god, there's more of them" style="width:100%">
+                    </div>     
+                </div>
+            </div> 
+        </div>
+        <div id="myModal" class="modal"> <!-- Declare Modal -->
+            <span class="close">×</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <div class="clr"></div> <!-- Clears and resets the floats -->
+    </div> <!--Container-->
+
+    <a href="#top" title="Return to Top"><img src="img/return-top.png" alt="return-to-top" class="return-top"></a>
+
+    <footer id="page-bottom">
+        <p>Copyright &copy; 2023, N0dds/Mitchell Rycroft</p>
+    </footer>
+    <script> //The Script Dungeon
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
