@@ -97,13 +97,18 @@ hr{
 /* --Class Styles-- */
 
 .head{
-    width: 800px;
-    height: 248px;
-    background-image: url(../img/header.png);
+    width: 900px;
+    height: 280px;
+    background-image: url(../img/mainheader.png);
     background-repeat: no-repeat;
     background-position: top center;
-    margin-top: 20px;
+    background-size: 900px, auto;
     text-align: center;
+}
+
+.head img{
+    width: 900px;
+    height: auto;
 }
 
 .container{
@@ -253,7 +258,7 @@ display: block;
 
 .rightcolumn {
     position: fixed;
-    left: 286px;
+    left: 246px;
     top: 0px;
     width: 248px;
 }
