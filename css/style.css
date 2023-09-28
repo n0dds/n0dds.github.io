@@ -10,25 +10,25 @@ html{
 
 h1{
     text-align: center;
-    font: bold 42px arial,helvetica,sans-serif;
+    font:48px Broadsheet;
     padding: 4px;
 }
 
 h2{
     text-align: center;
-    font: bold 24px arial,helvetica,sans-serif;
+    font: 24px Liberation-Serif;
     padding: 6px;
 }
 
 h3{
-    font: bold 24px arial,helvetica,sans-serif;
+    font:28px Broadsheet;
     padding-right: 6px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
 h5{
-    font: italic 18px arial,helvetica,sans-serif;
+    font: italic 18px Broadsheet;
     color:#00FF6E;
 }
 
@@ -37,7 +37,7 @@ p{
 }
 
 body{
-    font: normal 18px arial,helvetica,sans-serif;
+    font: normal 18px Liberation-Serif;
     word-spacing: 1px;
 
     /* Site Background */
@@ -308,21 +308,19 @@ div.gallery img {
     clear: both;
 }
 
-.gallery img:hover {
-    width: 225px;
-    transition-timing-function: ease;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-  }
+@font-face {
+    font-family: Broadsheet;
+    src: url(../fonts/Broadsheet\ Regular.ttf);
+}
+@font-face {
+    font-family: Broadsheet-Italic;
+    src: url(../fonts/Broadsheet\ Italic.ttf);
+}
 
-
-
-
-
-
-
+@font-face {
+    font-family: Liberation-Serif;
+    src: url(../fonts/LiberationSerif-Regular.ttf);
+}
 
   #myImg {
     border-radius: 6px;
