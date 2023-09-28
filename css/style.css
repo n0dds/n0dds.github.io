@@ -263,13 +263,13 @@ display: block;
     border-radius: 26px;
 }
   
-div.gallery img {
+/*div.gallery img {
     width: 100%;
     border-radius: 12px;
     aspect-ratio: 1;
     object-fit:cover;
   }
-  
+*/
 .responsive {
     padding: 6px 6px;
     float: left;
@@ -294,3 +294,17 @@ div.gallery img {
     display: table;
     clear: both;
 }
+
+#fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+  }
