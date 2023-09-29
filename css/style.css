@@ -48,7 +48,7 @@ body{
 }
 
 blockquote {
-    font: italic 16px arial,helvetica,sans-serif;
+    font: italic 16px Liberation-Serif;
     color:#00FF6E;
     position: relative;
     padding: 10px;
