@@ -94,6 +94,18 @@ hr{
     background-position: center;
 }
 
+footer{
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.406);
+    color:#fff;
+    padding: 2px;
+    border-radius: 24px;
+    width: 18%;
+    margin: 20px auto;
+}
+
 /* --Class Styles-- */
 
 .head{
@@ -144,6 +156,17 @@ hr{
     border-radius: 24px;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.box-3{  /* FOR USE IN ARTICLES UNDER PHOTOGRAPHS */
+    background-color:  rgba(0, 0, 0, 0.318);
+    color:#00FF6E;
+    padding: 4px;
+    margin: 14px auto;
+    border-radius: 16px;
+    text-align: center;
+    width: 70%;
+    font-size: 15px;
 }
 
 .block{
@@ -242,18 +265,6 @@ display: block;
     width: 80%;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-
-#page-bottom{
-    font-style: italic;
-    font-size: 16px;
-    text-align: center;
-    background-color:  rgba(0, 0, 0, 0.406);
-    color:#fff;
-    padding: 2px;
-    border-radius: 24px;
-    width: 18%;
-    margin: 20px auto;
 }
 
 .rightcolumn {
